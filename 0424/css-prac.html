@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+   width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      /* display: flex; */
+    }
+
+    /* .flex-item{
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      padding: 0px auto auto 0px;
+      margin: 0px auto auto 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    } */
+
+    .horizontal {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    .text-horizontal {
+      text-align: center;
+    }
+
+    .text-vertical {
+      line-height: 100px;
+    }
+
+    .container2{
+      display: flex;
+      justify-content: center;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    content
+  </div>
+  <hr>
+  <div class="container">
+    <div class ="text-horizontal text-vertical">
+      content
+    </div>
+  </div>
+  <hr>
+  <div class="container2">
+    <div class="horizontal">
+
+    </div>
+  </div>
+  <hr>
+  <div class="flex-item">
+    <p style="display: flex;"></p>
+  </div>
+  <hr>
+
+  
+</body>
+</html>
