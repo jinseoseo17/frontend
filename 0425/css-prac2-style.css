@@ -1,0 +1,92 @@
+/* nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul{
+  display: flex;
+}
+
+nav > ul > li{
+  margin: 0 1rem 0 1rem;
+} */
+
+nav{
+  display:flex;
+  justify-content: space-between;  
+  ul{
+    display:flex;
+    font-size: 20px;
+    li{
+      margin: 0 1rem 0 1rem;
+    }
+  }
+}
+
+ul{ 
+  list-style: none; /* 모든 요소의 점 사라지게 하기*/
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  width: 80%;
+  margin: 2rem auto 0 auto;
+}
+
+.introduction{
+  display: flex;
+}
+
+.introduction > div{
+  margin: 0 1rem 0 1rem;
+}
+
+.introduction-title{
+  text-align: center;
+}
+
+.introduction-description{
+  text-align: center;
+}
+
+.introduction > img{
+  width:50%
+}
+
+.contact>h2{
+  text-align: center;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 1rem;
+  width: 40%;
+}
+
+.contact-form > {
+  margin: 4px 0 4px 0;
+}
+
+.contact > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact > div > img {
+  width: 40%;
+}
+
+.contact-form-send{
+  margin: 1rem 0; 
+}
+
+.more > ul{
+  display: flex;
+  justify-content: space-between;
+}

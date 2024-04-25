@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex{
+      display: flex;
+    }
+
+    .content-box{
+      width: auto;
+      height: auto;
+      /* border: 1px solid black; */
+    }
+
+    .space-between{
+    justify-content: space-between;
+  }
+
+  .horizontal-center{
+    justify-content: center;
+  }
+
+  .box{
+    width:200px;
+    height:auto;
+    /* border: 1px solid black; */
+  }
+
+  .text-align{
+    text-align: center;
+    /* line-height: 100px; */
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="flex space-between">
+        <a href="" class = "content-box">APPAREL SHOP</a>
+
+        <div class="content-box space-between">
+          <a href="" class = "content-box">HOME</a>
+          <a href="" class = "content-box">PRODUCT</a>
+        </div>
+      </class>  
+    </nav>
+    <img width=100% src="apparel.png" alt="">
+  </header>
+  <main>
+    <article>
+      <div class="flex content-box horizontal-center">
+        <img src="apparel2.jpg" alt="">
+        <div class="content-box"></div>
+      <div>
+        <h1>About Our Company</h1>
+      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ipsam saepe soluta suscipit dolorum libero culpa quos sit, perspiciatis laboriosam ullam sed, rem dolor modi in voluptatibus doloribus, expedita explicabo.</div>
+      </div>
+    </article>
+    <article>
+      <div class="flex content-box horizontal-center">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="flex content-box horizontal-center">
+        <div class="flex content-box space-between">
+            <div class="box">
+              <div>username</div>
+              <input type="text">
+              <div>email</div>
+              <input type="text">
+              <div>send</div>
+            </div>
+            <div class="content-box">
+              <img width='300px'src="apparel3.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="flex content-box horizontal-center">
+        <h1>MORE</h1>
+      </div>
+      <div class="content-box horizontal-center space-between">
+        <div class="flex space-between">
+          <div class="content-box text-align">
+            <img width=100px src="mail.png" alt="">
+            <div><h5>Email Address</h5></div>
+            <div>a@example.com</div>
+          </div>
+          
+          <div class="content-box text-align">
+            <img width=100px src="telephone.png" alt="">
+            <div><h5>Phone Number</h5></div>
+            <div>010-1234-5678</div>
+          </div>
+
+          <div class="content-box text-align">
+            <img width=100px src="circle.png" alt="">
+            <div><h5>Locationr</h5></div>
+            <div>서울특별시 도봉구</div>
+          </div>
+
+          <div class="content-box text-align">
+            <img width=100px src="clock.png" alt="">
+            <div><h5>Location</h5></div>
+            <div>9am ~ 6pm</div>
+          </div>
+          
+      </div>
+ 
+    </article>
+  </main>
+  <hr>
+  <footer>
+    <div class="text-align">
+      copyright ~~
+    </div>
+  </footer>
+  
+</body>
+</html>

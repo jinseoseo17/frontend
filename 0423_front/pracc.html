@@ -5,18 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .flex{
+
+    .content{
+      border: 0.5px solid black;
       display: flex;
+      height: 50px;
+    }
+
+    .horizontal {
+      justify-content: space-between;
     }
     
   </style>
 </head>
 <body>
-  <section> <!--전체-->
-    <section><!--1번구역-->
-      <div>APPAREL SHOP </div>
-      <div>HOME</div> 
-      <div>PRODUCTS</div>
+  <div class = "content horizontal">
+        APPAREL SHOP
+        HOME
+        PRODUCTS
+      </div>
     </section>
     <section> <!--2번구역-->
       <img src="apparel.png" alt="메인배너이미지">
