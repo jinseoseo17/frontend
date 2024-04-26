@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <img width = "50%" src="" id="dog" alt="강아지 사진"> <!-- width 속성 사용하여 이미지 크기 지정도 가능 -->
+  <button>클릭!</button>
+
+  <script>
+    const URL = 'https://dog.ceo/api/breeds/image/random'
+    const btn = document.querySelector('button');
+    var dog = document.getElementById('dog');
+
+    btn.addEventListener('click', () => {
+      axios({
+    method: 'get',
+    url: URL
+  }
+)                                                   
+  .then(response =>{ //응답 두 개 이상 받을 경우 중괄호 필수
+console.log(response.data);
+dog.src = response.data['message']} //response.data.message로만 해도 가능!
+  )
+    })
+  </script>
+
+</body>
+</html>
