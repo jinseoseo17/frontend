@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>what color am I</h1>
+  <input type="text">
+</body>
+<script>
+  const inputTag = document.querySelector('input')
+  const h1Tag = document.querySelector('h1')
+  inputTag.addEventListener('input', () => {
+    const inputValue = inputTag.value
+    h1Tag.style.color = inputValue
+    console.log(inputValue)
+  })
+</script>
+</html>
