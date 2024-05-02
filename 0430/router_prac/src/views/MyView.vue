@@ -1,8 +1,11 @@
 <template>
   <div>
     <h1>This is My View</h1>
+
     <button @click="goHome">홈으로!</button>
     <button @click="goAbout">어바웃으로!</button>
+
+    <h1 @click="goContact">컨택트로 이동!</h1>
   </div>
 </template>
 
@@ -16,6 +19,11 @@ function goHome(){
 
 function goAbout(){
   router.push('/about')
+}
+
+function goContact(){
+  console.log('컨택트로 이동했습니다')
+  router.push('/contact')
 }
 
 </script>
